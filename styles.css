@@ -1,11 +1,10 @@
 *{
     background-color: #eff1fa;
-    font-family: Inter;
-    font-size: 32px;
+    font-family: "Inter";
+    font-style: normal;
     font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
+    font-size: 32px;
+    line-height: 150%;
 }
 
 .logo{
@@ -43,4 +42,42 @@ main{
 }
 .mensaje:focus {
     outline: none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.btn-desencriptar{
+    background: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.btn-encriptar{
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+.informacion{
+    color: #495057;
+    font-size: 18px;
 }
