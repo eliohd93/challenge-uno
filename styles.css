@@ -74,6 +74,31 @@ main{
     height: 67px;
     width: 328px;
 }
+.sinMsj{
+    
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    position: relative;
+    margin-left: 118px;
+    margin-top: 310px;
+    margin-right:380;
+}
+.ingreseMsj{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+   position: relative;
+    margin-left: 118px;
+
+
+}
+
 .copiar{
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -81,8 +106,8 @@ main{
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top: 574px;
-    position: absolute;
+    margin-top: 170px;
+    position: relative;
     width: 336px;
 }
 .informacion{
