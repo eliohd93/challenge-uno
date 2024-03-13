@@ -75,7 +75,7 @@ main{
     width: 328px;
 }
 .sinMsj{
-    
+    text-align: center;
     color: rgb(0, 0, 0);
     font-family: Inter;
     font-size: 24px;
@@ -84,10 +84,13 @@ main{
     letter-spacing: 0em;
     position: relative;
     margin-left: 118px;
-    margin-top: 310px;
-    margin-right:380;
+    margin-top: 260px;
+    margin-right: 180px;
+  
+   
 }
 .ingreseMsj{
+    text-align: center;
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -95,6 +98,7 @@ main{
     letter-spacing: 0em;
    position: relative;
     margin-left: 118px;
+    margin-right: 180px;
 
 
 }
