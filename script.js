@@ -26,7 +26,15 @@ function encriptar(stringEncriptada){
     }
     return stringEncriptada
 }
-
+function btnEncriptar(){
+    const textoEncriptado = encriptar(textArea.value)
+    mensaje.value = textoEncriptado
+    // textArea.value = "";
+    mensaje.style.backgroundImage = "none";
+    document.getElementById("texto2").innerHTML = "";
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("copiar").style.display = "inherit";
+}
     
    function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
@@ -45,6 +53,25 @@ function encriptar(stringEncriptada){
             }
         }
         return stringDesencriptada
+    }
+    function copy() {
+        var txtcopiar = document.querySelector("#mensaje");
+    
+        // Selecciona el contenido del textarea
+        txtcopiar.select();
+    
+        try {
+            // Copia el contenido seleccionado al portapapeles
+            document.execCommand('copy');
+            alert("Copiado al portapapeles");
+        } catch (err) {
+            // Maneja errores
+            console.error('Error al copiar: ', err);
+            alert('Error al copiar');
+        }
+    }
+
     
 
-}
+    
+
