@@ -10,7 +10,7 @@
 }
 
 .logo{
-    margin-top: 1%;
+    margin-top: 5%;
     margin-left: 1%;
     width: 8%;
 }
@@ -108,10 +108,10 @@ main{
     line-height: 29px;
     letter-spacing: 0em;
     position: relative;
-    margin-left: 17%;
+    margin-left: 15%;
     margin-top: 50%;
     margin-right:2%;
-    width: 350px;
+    width: 360px;
 
 }
 .ingreseMsj{
@@ -277,7 +277,7 @@ main{
     }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 598px) {
+@media only screen and (min-width: 275px) and (max-width: 598px) {
     * {
         box-sizing: border-box;
         margin: 0;
