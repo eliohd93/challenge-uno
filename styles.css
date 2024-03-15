@@ -1,4 +1,6 @@
-*{
+/* DISEÑO RESPONSIVE: DESKTOP */
+@media (min-width: 992px) {
+    *{
     background-color: #f3f5fc;
     font-family: "Inter";
     font-weight: 400;
@@ -139,43 +141,51 @@ main{
     position: fixed;
     width: 336px;
 }
-
-
-//configuracion tablet//
-@media screen (min-width: 260px) and (max-width: 768px) {
-    *{
+}
+/* DISEÑO RESPONSIVE: TABLET */
+@media (min-width: 599px) and (max-width: 991px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
         background-color: #f3f5fc;
         font-family: "Inter", sans-serif;
         font-weight: 400;
-        font-size: 16px; 
-        line-height: 150%;
-        overflow-y: hidden;
+        font-size: 16px; /* Reducir el tamaño de fuente para dispositivos móviles */
+        line-height: 1.5;
+        overflow-y: hidden; /* Evita el desplazamiento vertical en dispositivos móviles */
     }
+    
     .logo {
-        margin-top: 20px;
-        margin-left: 5px;
-        width: 15%;
+        margin-top: 10px; /* Reducir el margen superior */
+        margin-left: 10px;
+        width: 15%; /* Ajustar el tamaño del logo para dispositivos móviles */
     }
     
     main {
-        display: column;
+        display: flex;
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
         margin-bottom: 10px;
-        margin-left: 10px;
-        flex-direction: column; 
-        margin-left: 0;
-    }
-
-    .mensaje {
-        margin-left: 0; 
-
+        margin-left: 10px; /* Reducir el margen izquierdo */
     }
     
     .text-area {
-        height: 200px; 
+        border-radius: 15px;
+        margin-left: 17px;
+        text-align: center;
+        height: 235px; /* Reducir la altura del área de texto para dispositivos móviles */
         border: none;
         color: #0A3871;
-        margin-top: 10px; 
+        margin-top: 10px; /* Reducir el margen superior */
         text-transform: lowercase;
+        width: 90%;
+    }
+    
+    ::placeholder {
+        color: #0A3871;
     }
     
     .mensaje {
@@ -184,35 +194,220 @@ main{
         background-repeat: no-repeat;
         border: solid;
         border-color: white;
-        height: 300px; 
-        border-radius: 12px;
+        height: 295px; /* Reducir la altura del mensaje para dispositivos móviles */
+        border-radius: 15px; /* Reducir el radio del borde para dispositivos móviles */
         color: #0A3871;
-        margin-left: 10px; 
-        margin-top: 10px; 
-        padding-left: 10px;
-        position: static; 
+        margin: 3px; /* Ajustar el margen en dispositivos móviles */
+        padding: 12px; /* Ajustar el relleno en dispositivos móviles */
+        margin-left: 17px;
+        text-align: center;
+        width: 90%;
+       
+       
     }
     
-    .sinMsj, .ingreseMsj {
+    .mensaje:hover {
+        border-color: rgb(87, 185, 218);
+    }
+    
+    .columna {
+        display: flex;
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        margin: 10px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .alerta {
+        margin: 2% 49%; /* Ajustar el margen en dispositivos móviles */
+        display: flex;
+        gap: 1em;
+    }
+    
+    .informacion {
+        color: #495057;
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+        margin: 10px; /* Ajustar el margen en dispositivos móviles */
+        text-align: center;
+    }
+    
+    .botones {
+        display: flex;
+        margin: 10px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .btn-desencriptar, .btn-encriptar {
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        margin: 5px; /* Ajustar el margen en dispositivos móviles */
+        padding: 10px; /* Ajustar el relleno en dispositivos móviles */
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+    
+    #texto2 {
+        text-align: center;
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    }
+    
+    .sinMsj {
         text-align: center;
         color: rgb(0, 0, 0);
-        font-family: Inter;
-        font-size: 16px; 
+        font-size: 18px; /* Ajustar el tamaño de fuente en dispositivos móviles */
         font-weight: 700;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0em;
-        width: 80%; 
-        margin: 10px auto; 
+        margin: 5px 5px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .ingreseMsj {
+        text-align: center;
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        margin: 5px 5px; /* Ajustar el margen en dispositivos móviles */
     }
     
     .copiar {
         border: 1px solid #0A3871;
-        border-radius: 12px;
+        border-radius: 12px; /* Reducir el radio del borde para dispositivos móviles */
         color: #0A3871;
         cursor: pointer;
-        height: 50px; 
-        margin: 10px auto;
-        width: 80%; 
+        margin: 5px 10px; /* Ajustar el margen en dispositivos móviles */
+        padding: 10px; /* Ajustar el relleno en dispositivos móviles */
+        width: calc(100% - 20px); /* Ancho ajustado para dispositivos móviles */
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 598px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
     
+    body {
+        background-color: #f3f5fc;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px; /* Reducir el tamaño de fuente para dispositivos móviles */
+        line-height: 1.5;
+        overflow-y: hidden; /* Evita el desplazamiento vertical en dispositivos móviles */
+    }
+    
+    .logo {
+        margin-top: 10px; /* Reducir el margen superior */
+        margin-left: 10px;
+        width: 15%; /* Ajustar el tamaño del logo para dispositivos móviles */
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        margin-bottom: 10px;
+        margin-left: 10px; /* Reducir el margen izquierdo */
+    }
+    
+    .text-area {
+        border-radius: 15px;
+        margin-left: 17px;
+        text-align: center;
+        height: 235px; /* Reducir la altura del área de texto para dispositivos móviles */
+        border: none;
+        color: #0A3871;
+        margin-top: 10px; /* Reducir el margen superior */
+        text-transform: lowercase;
+        width: 90%;
+    }
+    
+    ::placeholder {
+        color: #0A3871;
+    }
+    
+    .mensaje {
+        background: white;
+        background-image: url(imagenes/Muñeco.png);
+        background-repeat: no-repeat;
+        border: solid;
+        border-color: white;
+        height: 295px; /* Reducir la altura del mensaje para dispositivos móviles */
+        border-radius: 15px; /* Reducir el radio del borde para dispositivos móviles */
+        color: #0A3871;
+        margin: 3px; /* Ajustar el margen en dispositivos móviles */
+        padding: 12px; /* Ajustar el relleno en dispositivos móviles */
+        margin-left: 17px;
+        text-align: center;
+        width: 90%;
+       
+    }
+    
+    .mensaje:hover {
+        border-color: rgb(87, 185, 218);
+    }
+    
+    .columna {
+        display: flex;
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        margin: 10px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .alerta {
+        margin: -9% 185%; /* Ajustar el margen en dispositivos móviles */
+        display: flex;
+        gap: 1em;
+    }
+    
+    .informacion {
+        color: #495057;
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+        margin: 10px; /* Ajustar el margen en dispositivos móviles */
+        text-align: center;
+    }
+    
+    .botones {
+        display: flex;
+        margin: 10px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .btn-desencriptar, .btn-encriptar {
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        margin: 5px; /* Ajustar el margen en dispositivos móviles */
+        padding: 10px; /* Ajustar el relleno en dispositivos móviles */
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+    
+    #texto2 {
+        text-align: center;
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    }
+    
+    .sinMsj {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 18px; /* Ajustar el tamaño de fuente en dispositivos móviles */
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        margin: 5px 5px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .ingreseMsj {
+        text-align: center;
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        margin: 5px 5px; /* Ajustar el margen en dispositivos móviles */
+    }
+    
+    .copiar {
+        border: 1px solid #0A3871;
+        border-radius: 12px; /* Reducir el radio del borde para dispositivos móviles */
+        color: #0A3871;
+        cursor: pointer;
+        margin: 5px 10px; /* Ajustar el margen en dispositivos móviles */
+        padding: 10px; /* Ajustar el relleno en dispositivos móviles */
+        width: calc(100% - 20px); /* Ancho ajustado para dispositivos móviles */
+    }
 }
