@@ -19,7 +19,8 @@
         <main>
             <section>
                 <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div>
+            <div class="columna">
+                <img class="alerta" src="imagenes/bi_exclamation-circle-fill (1).png" alt="icono de alerta">
                 <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
@@ -30,14 +31,12 @@
             <section>
                 
                 <div>
-                <textarea class="mensaje" id="mensaje" cols="20" rows="10"></textarea>
-                <li id="texto2">
-                <p class="sinMsj">Ningún mensaje fue encontrado</p>
-                <p class="ingreseMsj">Ingresa el texto que desees encriptar o desencriptar.</p>
-                </li>
-            </div>
-                <div>
+                    <textarea class="mensaje" id="mensaje" cols="20" rows="10"></textarea>
                     <button class="copiar" id="copiar" onclick="copy()">Copiar</button>
+                    <li id="texto2">
+                        <p class="sinMsj">Ningún mensaje fue encontrado</p>
+                        <p class="ingreseMsj">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </li>
                 </div>
             </section>
         </main>
