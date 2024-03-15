@@ -3,15 +3,15 @@
     *{
     background-color: #f3f5fc;
     font-family: "Inter";
-    font-weight: 400;
+    font-weight: 400%;
     font-size: 32px;
     line-height: 150%;
     overflow-y: hidden;
 }
 
 .logo{
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
     width: 8%;
 }
 
@@ -21,10 +21,10 @@ main{
     margin-left: 180px;
 }
 .text-area {
-    height: 400px;
+    height: 60%;
     border: none;
     color: #0A3871;
-    margin-top: 30px;
+    margin-top:5%;
     text-transform: lowercase;
 }
 ::placeholder{ color: #0A3871; }
@@ -58,9 +58,9 @@ main{
     display:flex;
 }
 .alerta{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 10px;
+    margin-bottom: 8%;
+    margin-top: 7%;
+    margin-left: 1%;
     display: flex;
     gap: 1em;
 
@@ -68,15 +68,14 @@ main{
  }
 .informacion{
     color: #495057;
-    font-size: 18px;
+    font-size: 58%;
     display: flex;
-    margin-top: 45px;
-    margin-left: 5px;
+    margin-left: 2%;
     
 }
 .botones{
     display: flex;
-    margin-top: 18px;
+    margin-top: 2%;
 }
 .btn-desencriptar{
     background: white;
@@ -109,10 +108,10 @@ main{
     line-height: 29px;
     letter-spacing: 0em;
     position: relative;
-    margin-left: 100px;
-    margin-top: 260px;
-    margin-right:180px;
-    width: 360px;
+    margin-left: 17%;
+    margin-top: 50%;
+    margin-right:2%;
+    width: 350px;
 
 }
 .ingreseMsj{
@@ -137,7 +136,7 @@ main{
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top:579px;
+    margin-top: 26.7%;
     position: fixed;
     width: 336px;
 }
