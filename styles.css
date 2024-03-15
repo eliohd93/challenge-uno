@@ -272,6 +272,7 @@ main{
         color: #0A3871;
         cursor: pointer;
         margin: 5px 10px; /* Ajustar el margen en dispositivos móviles */
+        margin-top: 39%;
         padding: 10px; /* Ajustar el relleno en dispositivos móviles */
         width: calc(100% - 20px); /* Ancho ajustado para dispositivos móviles */
     }
