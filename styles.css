@@ -136,8 +136,8 @@ main{
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top: 36%;
-    position: fixed;
+    margin-top: 620px;
+    position: absolute;
     width: 336px;
 }
 }
