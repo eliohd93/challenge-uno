@@ -147,34 +147,34 @@ main{
         background-color: #f3f5fc;
         font-family: "Inter", sans-serif;
         font-weight: 400;
-        font-size: 16px; /* Reducido para dispositivos móviles y tabletas */
+        font-size: 16px; 
         line-height: 150%;
         overflow-y: hidden;
     }
     .logo {
-        margin-top: 20px; /* Reducido para dispositivos móviles y tabletas */
-        margin-left: 5px; /* Reducido para dispositivos móviles y tabletas */
-        width: 15%; /* Reducido para dispositivos móviles y tabletas */
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 15%;
     }
     
     main {
         display: flex;
         margin-bottom: 10px;
-        margin-left: 10px; /* Ajustado para dispositivos móviles y tabletas */
-        flex-direction: column; /* Cambia el diseño a columna en dispositivos más pequeños */
-        margin-left: 0; /* Quita el margen izquierdo para centrar en dispositivos más pequeños */
+        margin-left: 10px;
+        flex-direction: column; 
+        margin-left: 0;
     }
 
     .mensaje {
-        margin-left: 0; /* Quita el margen izquierdo para centrar en dispositivos más pequeños */
+        margin-left: 0; 
 
     }
     
     .text-area {
-        height: 200px; /* Reducido para dispositivos móviles y tabletas */
+        height: 200px; 
         border: none;
         color: #0A3871;
-        margin-top: 10px; /* Reducido para dispositivos móviles y tabletas */
+        margin-top: 10px; 
         text-transform: lowercase;
     }
     
@@ -184,35 +184,35 @@ main{
         background-repeat: no-repeat;
         border: solid;
         border-color: white;
-        height: 300px; /* Reducido para dispositivos móviles y tabletas */
-        border-radius: 12px; /* Reducido para dispositivos móviles y tabletas */
+        height: 300px; 
+        border-radius: 12px;
         color: #0A3871;
-        margin-left: 10px; /* Ajustado para dispositivos móviles y tabletas */
-        margin-top: 10px; /* Reducido para dispositivos móviles y tabletas */
-        padding-left: 10px; /* Ajustado para dispositivos móviles y tabletas */
-        position: static; /* Cambiado a estático para dispositivos móviles y tabletas */
+        margin-left: 10px; 
+        margin-top: 10px; 
+        padding-left: 10px;
+        position: static; 
     }
     
     .sinMsj, .ingreseMsj {
         text-align: center;
         color: rgb(0, 0, 0);
         font-family: Inter;
-        font-size: 16px; /* Reducido para dispositivos móviles y tabletas */
+        font-size: 16px; 
         font-weight: 700;
-        line-height: 24px; /* Ajustado para dispositivos móviles y tabletas */
+        line-height: 24px;
         letter-spacing: 0em;
-        width: 80%; /* Ajustado para dispositivos móviles y tabletas */
-        margin: 10px auto; /* Ajustado para dispositivos móviles y tabletas */
+        width: 80%; 
+        margin: 10px auto; 
     }
     
     .copiar {
         border: 1px solid #0A3871;
-        border-radius: 12px; /* Reducido para dispositivos móviles y tabletas */
+        border-radius: 12px;
         color: #0A3871;
         cursor: pointer;
-        height: 50px; /* Reducido para dispositivos móviles y tabletas */
-        margin: 10px auto; /* Ajustado para dispositivos móviles y tabletas */
-        width: 80%; /* Ajustado para dispositivos móviles y tabletas */
+        height: 50px; 
+        margin: 10px auto;
+        width: 80%; 
     }
     
 }
